@@ -5,6 +5,7 @@ Le joueur incarne un archer elfe (représenté par le personnage de Legolas) et 
 pour défendre le Gouffre de Helm. 
 
 Gameplay : 
+
 Le joueur peut se déplacer uniquement de gauche à droite, et tirer sur les orcs en face de lui. 
 A chaque niveau, une nouvelle vague d'orcs avance vers le joueur en lui lançant des lances.
 Si un orc ou une lance touche le joueur, ce dernier perd une vie et la vague est repositionnée à son point de départ, sans affecter le nombre d'orcs restants à ce niveau.
