@@ -14,7 +14,9 @@ Comme dans les films, Legolas peut tirer trois flêches d'un coup, ce qui n'est 
 La version proposée s'inspire du fonctionnement de SpaceInvaders (notamment pour la gestion des vagues)
 
 Composition de la scène : 
+
 	- Ecran d'accueil : 
+	
 		- Titre du jeu (panel WaitToStart)
 		- Affichage des meilleurs scores (panel Network)
 		- Affichage/changement de pseudo du joeur (panel Network)
@@ -22,6 +24,7 @@ Composition de la scène :
 		- Bouton Play pour lancer le jeu (panel WaitToStart)
 
 	- Ecran de jeu (visible une fois les panels WaitToStart et Network masqués) :
+	
 		- Panel GameInfo : LblScore, LblLives, LblLevel
 		- Player (visible aussi dans sur l'écran d'accueil, car problème en utilisant la méthode SetActive/ ou destruction du player puis réinstantiation)
 			- ArrowPlayer (prefab)
@@ -37,6 +40,7 @@ Composition de la scène :
 		- RockBG : sprite de fond répété, masqué au final car empêche une bonne visibilité
 
 Fonctionnement du jeu :
+
 	- Au lancement du jeu, le joueur a des informations sur les meilleurs scores, peut changer de pseudo ou non, puis lancer une partie en appuyant sur le bouton Play
 	- L'interface est modifiée, et le joueur peut voir ses infos de : score, vies et niveaux
 	- Peu après une première vague d'orcs de 1 LIGNE apparaît en bas à gauche de l'écran. Pour le 1er niveau, le joueur a droit à un 1er tir bonus.
@@ -54,6 +58,7 @@ Fonctionnement du jeu :
 	
 
 Analyse synthétique des scripts : 
+
 	- GameManager (script de gestion du "cycle de vie" général du jeu) : 
 		- Gestion des états de jeu : wait, play, levelup (wait est utilisé quand il y a pause ou GameOver)
 		- Gestion des textes de scores, lives et level (les accesseurs remplacent la méthode UpdateTexts() vue en cours pour la modif en temps réel)
@@ -101,6 +106,7 @@ Analyse synthétique des scripts :
 							
 		
 Ressources utilisées : 
+
 Orcs : 
 https://opengameart.org/content/orcs
 
